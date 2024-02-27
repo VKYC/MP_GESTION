@@ -6,7 +6,7 @@
     'website': "corner.store59@gmail.com",
     'category': 'account',
     'version': '15.0.0.0.1',
-    'depends': ['account', 'l10n_latam_invoice_document'],
+    'depends': ['account', 'l10n_latam_invoice_document', 'payroll_payment'],
     'data': [
         # 'security/ir.model.access.csv',
         'views/account_move_views.xml',
