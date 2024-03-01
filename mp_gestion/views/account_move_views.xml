@@ -12,6 +12,7 @@
                 <field name="invoice_date" string="Fecha factura"/>
                 <field name="date" string="Fecha contable"/>
                 <field name="account_id" optional="show"/>
+                <field name="sale_line_ids" optional="show" widget="many2many_tags" string="Articulo"/>
                 <field name="invoice_origin" optional="show" string="Documento origen"/>
                 <field name="partner_id" string="Proveedor" optional="show"/>
                 <field name="journal_id" optional="show"/>
@@ -33,6 +34,6 @@
         <field name="view_id" ref="mp_gestion.view_mp_gestion_account_move_tree"/>
         <field name="context">{'search_default_group_by_move':1}</field>
     </record>
-    <menuitem id="account_mp_provision_menu" parent="mp_gestion_menu_root" name="Reporte Apuntes contables" sequence="30"/>
-    <menuitem id="menu_account_apuntes_contables" name="Reporte_apuntes_contables" action="ir_account_apuntes_contables" parent="account_mp_provision_menu" sequence="50"/>
+    <menuitem id="account_mp_provision_menu" parent="mp_gestion_menu_root" name="Reporte Apuntes contables" sequence="30" groups="mp_gestion.mp_gestion_group"/>
+    <menuitem id="menu_account_apuntes_contables" name="Reporte_apuntes_contables" action="ir_account_apuntes_contables" groups="mp_gestion.mp_gestion_group" parent="account_mp_provision_menu" sequence="50"/>
 </odoo>

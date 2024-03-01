@@ -9,6 +9,7 @@
     'depends': ['account', 'l10n_latam_invoice_document', 'payroll_payment'],
     'data': [
         # 'security/ir.model.access.csv',
+        'security/mp_gestion_group.xml',
         'views/account_move_views.xml',
         # 'views/templates.xml',
     ],
