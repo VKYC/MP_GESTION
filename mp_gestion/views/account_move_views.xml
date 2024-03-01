@@ -6,7 +6,9 @@
         <field name="model">account.move.line</field>
         <field name="arch" type="xml">
             <tree string="Gestión">
-                <field name="move_id"/>
+                <field name="vat"/>
+                <field name="id" optional="hide"/>
+                <field name="move_id" optional="hide"/>
                 <field name="invoice_date" string="Fecha factura"/>
                 <field name="date"/>
                 <field name="account_id" optional="show"/>
@@ -25,7 +27,7 @@
         </field>
     </record>
     <record model="ir.actions.act_window" id="ir_account_apuntes_contables">
-        <field name="name">Reporte apuntes contables</field>
+        <field name="name">Análisis de Datos</field>
         <field name="res_model">account.move.line</field>
         <field name="view_mode">tree</field>
         <field name="view_id" ref="mp_gestion.view_mp_gestion_account_move_tree"/>

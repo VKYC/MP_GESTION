@@ -11,3 +11,4 @@ class AccountMoveLine(models.Model):
     mp_grupo_flujo_ids = fields.Many2many(related="move_id.mp_grupo_flujo_ids")
     mp_grupo_flujo_id = fields.Many2one(related='move_id.mp_grupo_flujo_id')
     invoice_origin = fields.Char(related='move_id.invoice_origin')
+    vat = fields.Char(related='move_id.partner_id.vat')
