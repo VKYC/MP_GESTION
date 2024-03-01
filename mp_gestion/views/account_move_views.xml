@@ -10,7 +10,7 @@
                 <field name="id" optional="hide"/>
                 <field name="move_id" optional="hide"/>
                 <field name="invoice_date" string="Fecha factura"/>
-                <field name="date"/>
+                <field name="date" string="Fecha contable"/>
                 <field name="account_id" optional="show"/>
                 <field name="invoice_origin" optional="show" string="Documento origen"/>
                 <field name="partner_id" string="Proveedor" optional="show"/>
