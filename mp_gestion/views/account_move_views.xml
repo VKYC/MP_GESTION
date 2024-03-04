@@ -9,6 +9,7 @@
                 <field name="vat" string="RUT"/>
                 <field name="id" optional="hide"/>
                 <field name="move_id" optional="hide"/>
+                <field name="move_name" optional="hide"/>
                 <field name="invoice_date" string="Fecha factura"/>
                 <field name="date" string="Fecha contable"/>
                 <field name="account_id" optional="show"/>
@@ -20,6 +21,7 @@
                 <field name="mp_grupo_flujo_id" optional="show"/>
                 <field name="name" optional="show"/>
                 <field name="analytic_account_id" optional="show"/>
+                <field name="user_type_id" optional="show" string="Tipo de Cuenta"/>
                 <field name="analytic_tag_ids" widget="many2many_tags" optional="show"/>
                 <field name="l10n_latam_document_type_id" optional="show"/>
                 <field name="currency_id" optional="show"/>
