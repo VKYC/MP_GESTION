@@ -16,7 +16,7 @@
                 <field name="account_id" optional="show"/>
                 <field name="user_type_id" optional="show" string="Tipo de Cuenta"/>
                 <field name="move_id" optional="hide"/>
-                <field name="purchase_line_id" optional="show" string="Articulo"/>
+                <field name="product_id" optional="show" string="Articulo"/>
                 <field name="invoice_origin" optional="show" string="Documento origen"/>
                 <field name="l10n_latam_document_type_id" optional="show"/>
                 <field name="journal_id" optional="show"/>
